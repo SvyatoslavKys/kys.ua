@@ -43,8 +43,13 @@ li{
     text-decoration: none;
     font-family: 'Poor Story', system-ui;
     font-size: 28px;
+    transition: 300ms;
+}
+.nav_link:hover {
+    color: blueviolet;
 
 }
+
 /* hero */ 
 .hero_section{
     width: 100%;
@@ -84,7 +89,40 @@ li{
     color: aliceblue;
     font-size: 16px;
     transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
 .hero_btn:hover{
-    background-color: blue;
+    background-color: rgb(61, 195, 106);
+    font-size: 18px;
+}
+.card-container {
+    display: flex;
+    justify-content: space-around ;
+    flex-wrap: wrap;
+    
+}
+.card-photo {
+    height: 300px;
+    width: 500px;
+    border: 1px solid tomato;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    object-fit: cover;
+    transition: 300ms;
+}
+.card-photo:hover{
+    height: 320px;
+    width: 520px;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;	
+}
+.card-photo:active {
+    height: 300px;
+    width: 500px;
+    opacity: 90%;
 }
